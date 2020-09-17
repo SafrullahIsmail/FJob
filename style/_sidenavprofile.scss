@@ -1,0 +1,43 @@
+.sidenav{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    justify-content: space-between;
+    align-items: center;
+    a.bio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 80%;
+        border: 2px solid black;
+        text-decoration: none;
+        color: black;
+        margin-bottom: 30px;
+        &:hover{
+            background-color: $color-text;    
+            color: $color-bg;            
+            border: 2px solid $color-text;            
+        }
+    }    
+    a.peng{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 80%;
+        border: 2px solid black;
+        text-decoration: none;
+        color: black;        
+        &:hover{
+            background-color: $color-text;    
+            color: $color-bg;            
+            border: 2px solid $color-text;            
+        }
+    }    
+}

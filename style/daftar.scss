@@ -1,0 +1,207 @@
+@import 'config';
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: $color-bg;
+    font-family: $text-judul;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: -15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 100;
+    .text-jumbo {
+        margin-top: 20px;
+        width: 50%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-text;
+        margin-bottom: 8px;
+        h1{
+            font-family: $text-H;
+            background-color: inherit;
+            color: $color-bg;
+            font-size: 70px;
+            letter-spacing: 10px;
+        }
+    }
+    .line{
+        width: 50%;
+        height: 4px;
+        position: relative;
+        display: block;
+        background-color: $color-line;
+    }
+    main{
+        width: 50%;
+        height: 65vh;
+        background-color: $color-bg;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 8px;
+        .containerline{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            width: 20%;
+            height: 100%;
+            margin: auto 20px; 
+            .line{
+                margin-top: 8px;
+                margin-bottom: 20px;
+                width: 100%;
+                height: 4px;
+                position: relative;
+                display: block;
+                background-color: $color-line;
+            }
+            .line1{
+                margin-top: 8px;
+                margin-bottom: 20px;
+                width: 70%;
+                height: 4px;
+                position: relative;
+                display: block;
+                background-color: $color-line;
+            }
+            .line2{
+                margin-top: 8px;
+                margin-bottom: 20px;
+                width: 70%;
+                height: 4px;
+                position: relative;
+                display: block;
+                background-color: $color-line;
+            }
+        }
+        form{
+            border: 2px solid black;
+            padding: 20px;
+            margin-top: 8px;
+            width: 50%;
+            max-height: 65vh;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            .error{
+                font-size: 13px;
+                margin: 0px auto;
+                width: 100%;
+                border: 2px solid $color-text;
+            }
+            input[type = text]{
+                width: 100%;
+                height: 40px;
+                border: 2px solid black;
+                border-left: none;
+                border-right: none;
+                border-top: none;
+                font-family: $text-regular;
+                font-size: 15px;
+                margin-bottom: 30px;
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    border-bottom: 2px solid $color-text;
+                }
+            }
+            input[name = namadpn]{
+                width: 45%;
+                padding: 5px;
+            }
+            input[name = namablk]{
+                width: 50%;
+                margin-left: 10px;
+                padding: 5px;
+            }
+            input[type = email]{
+                width: 100%;
+                height: 40px;
+                padding: 5px;
+                border: 2px solid black;
+                border-left: none;
+                border-right: none;
+                border-top: none;
+                font-family: $text-regular;
+                font-size: 15px;
+                margin-bottom: 30px;
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    border-bottom: 2px solid $color-text;
+                }
+            }
+            input[type = password]{
+                width: 90%;
+                height: 40px;
+                border: 2px solid black;
+                border-left: none;
+                border-right: none;
+                border-top: none;
+                font-family: $text-regular;
+                font-size: 15px;
+                margin-bottom: 30px;
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    border-bottom: 2px solid $color-text;
+                }
+            }
+            input[name = pass]{
+                width: 40%;
+                padding: 5px;
+            }
+            input[name = re_pass]{
+                width: 45%;
+                margin-left: 5px;
+                padding: 5px;
+            }
+            span{
+                margin-left: 10px;
+            }
+            .check{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: nowrap;      
+                margin-bottom: 20px;
+                input[type = checkbox]{
+                    margin-right: 20px;
+                }
+            }
+            input[type = submit]{
+                width: 80px;
+                height: 30px;
+                margin: 0px auto;
+                background-color: $color-bg;
+                border: 2px solid black;
+                transition: all width .1s;
+                &:hover{
+                    background-color: $color-text;
+                    transition: all ease-in-out .2s;
+                    border: none;
+                    color: $color-bg;
+                }
+            }
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,819 @@
+@import url("https://fonts.googleapis.com/css2?family=News+Cycle&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bevan&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fefefe;
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 100;
+}
+
+.container nav {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container nav .container-nav {
+  width: 90%;
+  height: 10vh;
+  border-bottom: 3px solid black;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #fefefe;
+  font: 1.25em "News Cycle", sans-serif;
+  font-weight: 400;
+}
+
+.container nav .container-nav .menu {
+  background-color: #fefefe;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.container nav .container-nav .menu a {
+  text-decoration: none;
+  color: black;
+  background-color: #fefefe;
+}
+
+.container nav .container-nav .menu a:hover {
+  color: #c01d2e;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.container nav .container-nav .menu .dropdown ul {
+  background-color: #fefefe;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container nav .container-nav .menu .dropdown li {
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.container nav .container-nav .menu .dropdown li a, .container nav .container-nav .menu .dropdown li button {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container nav .container-nav .menu .dropdown li a:hover, .container nav .container-nav .menu .dropdown li button:hover {
+  color: #c01d2e;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.container nav .container-nav .menu .dropdown ul.main button.a:before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid;
+  border-color: transparent transparent black black;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.container nav .container-nav .menu .dropdown ul.sub {
+  top: 50px;
+  right: 10px;
+  position: absolute;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container nav .container-nav .menu .dropdown ul.sub li {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.container nav .container-nav .menu .dropdown ul.sub li:nth-child(1) a {
+  border-bottom: none;
+}
+
+.container nav .container-nav .menu .dropdown ul.sub li a {
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.container nav .container-nav .menu .dropdown ul.sub li a:hover {
+  color: #c01d2e;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.container header {
+  width: 100%;
+  background-color: #fefefe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container header .text-jumbo {
+  margin-top: 20px;
+  width: 90%;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c01d2e;
+  margin-bottom: 15px;
+}
+
+.container header .text-jumbo h1 {
+  font-family: "Bevan", cursive;
+  background-color: inherit;
+  color: #fefefe;
+  font-size: 110px;
+  letter-spacing: 10px;
+}
+
+.container header .line {
+  width: 90%;
+  height: 5px;
+  position: relative;
+  display: block;
+  background-color: black;
+}
+
+.container .container-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 2px solid black;
+}
+
+.container .container-main .sidenav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  height: 100%;
+  border: 2px solid black;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .container-main .sidenav a.bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 80%;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.container .container-main .sidenav a.bio:hover {
+  background-color: #c01d2e;
+  color: #fefefe;
+  border: 2px solid #c01d2e;
+}
+
+.container .container-main .sidenav a.peng {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 80%;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.container .container-main .sidenav a.peng:hover {
+  background-color: #c01d2e;
+  color: #fefefe;
+  border: 2px solid #c01d2e;
+}
+
+.container .container-main main {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .container-main main form .nama {
+  width: 80%;
+}
+
+.container .container-main main form .nama input[type=text] {
+  background-color: #fefefe;
+  width: 100%;
+  height: 30px;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+}
+
+.container .container-main main form .nama input[type=text]:focus {
+  outline: none;
+}
+
+.container .container-main main form .nama input[type=text]:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container .container-main main form .container-jks {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.container .container-main main form .container-jks .jeniskelamin {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .container-main main form .container-jks .jeniskelamin label {
+  margin-right: 90px;
+}
+
+.container .container-main main form .container-jks .status {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .container-main main form .container-jks .status label {
+  margin-right: 90px;
+}
+
+.container .container-main main form .tgl-telp {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.container .container-main main form .tgl-telp .tgllahir {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .container-main main form .tgl-telp .tgllahir select[name=tanggal] {
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.container .container-main main form .tgl-telp .tgllahir select[name=tanggal]:focus {
+  outline: none;
+}
+
+.container .container-main main form .tgl-telp .tgllahir select[name=tanggal]:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container .container-main main form .tgl-telp .tgllahir select[name=bulan] {
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.container .container-main main form .tgl-telp .tgllahir select[name=bulan]:focus {
+  outline: none;
+}
+
+.container .container-main main form .tgl-telp .tgllahir select[name=bulan]:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container .container-main main form .tgl-telp .tgllahir select[name=tahun] {
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+}
+
+.container .container-main main form .tgl-telp .tgllahir select[name=tahun]:focus {
+  outline: none;
+}
+
+.container .container-main main form .tgl-telp .tgllahir select[name=tahun]:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container .container-main main form .tgl-telp .telp {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .container-main main form .tgl-telp .telp input[type=text] {
+  width: 100%;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+}
+
+.container .container-main main form .tgl-telp .telp input[type=text]:focus {
+  outline: none;
+}
+
+.container .container-main main form .tgl-telp .telp input[type=text]:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container .container-main main form .kewar-email {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.container .container-main main form .kewar-email .kewargaan {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .container-main main form .kewar-email .kewargaan select[name=kewarganegaraan] {
+  width: 100%;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+}
+
+.container .container-main main form .kewar-email .kewargaan select[name=kewarganegaraan]:focus {
+  outline: none;
+}
+
+.container .container-main main form .kewar-email .kewargaan select[name=kewarganegaraan]:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container .container-main main form .kewar-email .email {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .container-main main form .kewar-email .email input[type=email] {
+  width: 100%;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+}
+
+.container .container-main main form .kewar-email .email input[type=email]:focus {
+  outline: none;
+}
+
+.container .container-main main form .kewar-email .email input[type=email]:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container .container-main main form .alamat-kota {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.container .container-main main form .alamat-kota .alamat {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .container-main main form .alamat-kota .alamat textarea {
+  resize: none;
+  overflow: auto;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.container .container-main main form .alamat-kota .alamat textarea:focus {
+  outline: none;
+}
+
+.container .container-main main form .alamat-kota .alamat textarea:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container .container-main main form .alamat-kota .kota {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .container-main main form .alamat-kota .kota input[name=kota] {
+  width: 100%;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+}
+
+.container .container-main main form .alamat-kota .kota input[name=kota]:focus {
+  outline: none;
+}
+
+.container .container-main main form .alamat-kota .kota input[name=kota]:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container .container-main main form .alamat-kota .kota input[name=kodepos] {
+  width: 100%;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+  margin-top: 26px;
+}
+
+.container .container-main main form .alamat-kota .kota input[name=kodepos]:focus {
+  outline: none;
+}
+
+.container .container-main main form .alamat-kota .kota input[name=kodepos]:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container .container-main main form .submit {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .container-main main form .submit input[type=submit] {
+  width: 70px;
+  height: 30px;
+  font-size: 15px;
+  margin-top: 26px;
+}
+
+.container .container-main main form .submit input[type=submit]:focus {
+  outline: none;
+}
+
+.container .container-main main form .submit input[type=submit]:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container footer {
+  border: 2px solid black;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  width: 90%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "News Cycle", sans-serif;
+}
+
+.container footer .fot1 {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container footer .fot1 a {
+  text-decoration: none;
+  color: black;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.container footer .fot1 a:first-child {
+  font-size: 40px;
+}
+
+.container footer .fot1 .social a img {
+  width: 20px;
+  height: 20px;
+}
+/*# sourceMappingURL=profile.css.map */

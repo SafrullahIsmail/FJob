@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=News+Cycle&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bevan&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fefefe;
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .wrap {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 100;
+}
+
+.container .wrap .text-jumbo {
+  margin-top: -20px;
+  width: 50%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c01d2e;
+  margin-bottom: 8px;
+}
+
+.container .wrap .text-jumbo h1 {
+  font-family: "Bevan", cursive;
+  background-color: inherit;
+  color: #fefefe;
+  font-size: 70px;
+  letter-spacing: 10px;
+}
+
+.container .wrap .line {
+  width: 50%;
+  height: 4px;
+  position: relative;
+  display: block;
+  background-color: black;
+}
+
+.container .wrap main {
+  width: 50%;
+  height: 40vh;
+  background-color: #fefefe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 8px;
+}
+
+.container .wrap main .containerline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  height: 100%;
+  margin: auto 20px;
+}
+
+.container .wrap main .containerline .line {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 4px;
+  position: relative;
+  display: block;
+  background-color: black;
+}
+
+.container .wrap main .containerline .line1 {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  width: 70%;
+  height: 4px;
+  position: relative;
+  display: block;
+  background-color: black;
+}
+
+.container .wrap main .containerline .line2 {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  width: 70%;
+  height: 4px;
+  position: relative;
+  display: block;
+  background-color: black;
+}
+
+.container .wrap main form {
+  border: 2px solid black;
+  padding: 20px;
+  margin-top: 8px;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .wrap main form .error {
+  font-size: 13px;
+  margin: 0px auto;
+  width: 100%;
+  border: 2px solid #c01d2e;
+}
+
+.container .wrap main form input[type=email] {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.container .wrap main form input[type=email]:focus {
+  outline: none;
+}
+
+.container .wrap main form input[type=email]:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container .wrap main form .pass {
+  width: 100%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.container .wrap main form .pass input[type=password] {
+  width: 100%;
+  height: 40px;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 15px;
+}
+
+.container .wrap main form .pass input[type=password]:focus {
+  outline: none;
+}
+
+.container .wrap main form .pass input[type=password]:hover {
+  border-bottom: 2px solid #c01d2e;
+}
+
+.container .wrap main form .pass input[name=pass] {
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 15px;
+}
+
+.container .wrap main form .pass span {
+  margin-left: 15px;
+}
+
+.container .wrap main form a {
+  font-size: 14px;
+}
+
+.container .wrap main form .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+
+.container .wrap main form .check input[type=checkbox] {
+  margin-right: 20px;
+}
+
+.container .wrap main form input[type=submit] {
+  width: 80px;
+  height: 30px;
+  margin: 10px 100px;
+  background-color: #fefefe;
+  border: 2px solid black;
+  -webkit-transition: all width .1s;
+  transition: all width .1s;
+}
+
+.container .wrap main form input[type=submit]:hover {
+  background-color: #c01d2e;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+  border: none;
+  color: #fefefe;
+}
+/*# sourceMappingURL=masuk.css.map */
